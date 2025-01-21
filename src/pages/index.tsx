@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 
 const Home = () => {
   return (
@@ -9,7 +8,6 @@ const Home = () => {
         <title>Sobre mim | samsdev</title>
       </Head>
       <main className="">
-        
         <div>
           <b className="text-[32px]">Oi 👋🏽 SOU O SAMUEL DOS SANTOS</b>
           <h1 className="text-[105px]">
