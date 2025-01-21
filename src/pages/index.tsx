@@ -9,26 +9,7 @@ const Home = () => {
         <title>Sobre mim | samsdev</title>
       </Head>
       <main className="">
-        <div className="bg-black text-white flex h-[90px] items-center justify-between">
-          <Link href="/">
-            <Image src="/Sd.png" width={90} height={90} alt="" />
-          </Link>
-          <span>SAMSDEV</span>
-          <ul className="flex gap-4">
-            <li>
-              <Link href="/">Sobre mim</Link>
-            </li>
-            <li>
-              <Link href="/">Projetos</Link>
-            </li>
-            <li>
-              <Link href="/servicos">Serviços</Link>
-            </li>
-            <li>
-              <Link href="/contatos">Entre em contato</Link>
-            </li>
-          </ul>
-        </div>
+        
         <div>
           <b className="text-[32px]">Oi 👋🏽 SOU O SAMUEL DOS SANTOS</b>
           <h1 className="text-[105px]">
