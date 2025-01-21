@@ -4,16 +4,13 @@ const Home = () => {
   return (
     <main className="">
       <div className="bg-black text-white flex h-[90px] items-center justify-between">
-        <Image src="" alt="" />
-        SAMSDEV
+        <Image src="/sd.png" width={90} height={90} alt="" />
+        <span>SAMSDEV</span>
         <ul className="flex gap-4">
           <li>Sobre mim</li>
           <li>Projetos</li>
           <li>Serviços</li>
           <li>Entre em contato</li>
-          <li>
-            <button>sol</button>
-          </li>
         </ul>
       </div>
       <div>
