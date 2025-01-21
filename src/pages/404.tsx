@@ -1,7 +1,12 @@
 import Link from "next/link";
+import Head from "next/head";
 
 const NotFound = () => {
   return (
+    <>
+    <Head>
+      <title>Página não encontrada | samsdev</title>
+    </Head>
     <div className="bg-red-600">
       <h1> Page not found 
         <span>404</span>
@@ -12,6 +17,8 @@ const NotFound = () => {
         <Link href="/">Ir para à Página Inicial</Link>
       </div>
     </div>
+    </>
+    
   )
 };
 

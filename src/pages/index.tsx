@@ -10,7 +10,9 @@ const Home = () => {
       </Head>
       <main className="">
         <div className="bg-black text-white flex h-[90px] items-center justify-between">
-          <Image src="/Sd.png" width={90} height={90} alt="" />
+          <Link href="/">
+            <Image src="/Sd.png" width={90} height={90} alt="" />
+          </Link>
           <span>SAMSDEV</span>
           <ul className="flex gap-4">
             <li>
