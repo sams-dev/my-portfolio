@@ -1,10 +1,15 @@
+import Head from "next/head";
 import Image from "next/image";
 
 const Home = () => {
   return (
+    <>
+    <Head>
+      <title>Sobre mim | samsdev</title>
+    </Head>
     <main className="">
       <div className="bg-black text-white flex h-[90px] items-center justify-between">
-        <Image src="/sd.png" width={90} height={90} alt="" />
+        <Image src="/Sd.png" width={90} height={90} alt="" />
         <span>SAMSDEV</span>
         <ul className="flex gap-4">
           <li>Sobre mim</li>
@@ -26,12 +31,12 @@ const Home = () => {
           cliente.
         </p>
         <ul className="flex gap-[30]">
-          <li className="bg-red-400 w-[80] h-[80]">title</li>
-          <li className="bg-red-400 w-[80] h-[80]">title</li>
-          <li className="bg-red-400 w-[80] h-[80]">title</li>
-          <li className="bg-red-400 w-[80] h-[80]">title</li>
-          <li className="bg-red-400 w-[80] h-[80]">title</li>
-          <li className="bg-red-400 w-[80] h-[80]">title</li>
+          <li className="bg-white w-[80] h-[80]">title</li>
+          <li className="bg-white w-[80] h-[80]">title</li>
+          <li className="bg-white w-[80] h-[80]">title</li>
+          <li className="bg-white w-[80] h-[80]">title</li>
+          <li className="bg-white w-[80] h-[80]">title</li>
+          <li className="bg-white w-[80] h-[80]">title</li>
         </ul>
       </div>
       <div>
@@ -44,6 +49,8 @@ const Home = () => {
         <button className="bg-[#498EF3] w-[315] h-[80]">Fale Comigo!</button>
       </div>
     </main>
+    </>
+    
   );
 };
 
