@@ -7,7 +7,7 @@ const NotFound = () => {
     <Head>
       <title>Página não encontrada | samsdev</title>
     </Head>
-    <div className="bg-red-600">
+    <div className=" ">
       <h1> Page not found 
         <span>404</span>
       </h1>

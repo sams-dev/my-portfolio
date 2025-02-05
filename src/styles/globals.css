@@ -5,3 +5,35 @@
 html, body {
   background-color: #F1F1F1;
 }
+
+.img-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.arrow-float {
+  animation: arrowd 2s ease-in-out infinite;
+}
+
+@keyframes arrowd{
+  0%, 100% {
+    transform: translateY(-2px) rotate(90deg);
+  }
+  50% {
+    transform: translateY(4px) rotate(90deg);
+  }
+  100% {
+    transform: translateY(-2px) rotate(90deg);
+  }
+}
