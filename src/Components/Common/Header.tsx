@@ -15,11 +15,11 @@ const Header = () => {
             <Image src="/Sd.png" width={90} height={90} alt="Logo da Samsdev" />
           </Link>
           <span className={` ${opensans.className} text-2xl`}>
-            S A M S D E V{" "}
+            S A M S D E V
           </span>
         </div>
 
-        <nav className="flex gap-4 mr-[175]">
+        <nav className="hidden md:flex gap-4 mr-[175]">
           <Link className="font-semibold" href="/">
             Sobre mim
           </Link>

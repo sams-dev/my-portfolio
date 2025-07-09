@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { Ubuntu, Roboto, Nunito } from "next/font/google";
+import { Ubuntu, Roboto } from "next/font/google";
 
 const ubunto = Ubuntu({
   weight: "700",
@@ -9,10 +9,6 @@ const ubunto = Ubuntu({
 });
 const roboto = Roboto({
   weight: "700",
-  subsets: ["latin"],
-});
-const nunito = Nunito({
-  weight: "400",
   subsets: ["latin"],
 });
 
@@ -33,23 +29,32 @@ const Home = () => {
             </span>{" "}
             <br /> <span className={` ${ubunto.className} `}>DEVELOPER</span>
           </h1>
-          <p
-            className="text-base text-slate-800 pt-2 pl-2"
-          >
-            Tenho 22 anos e sou desenvolvedor Frontend, atualmente atuando como
-            freelancer. Especializo-me em criar sistemas que aprimoram a
-            eficiência e produtividade dos meus clientes. Foco em oferecer
-            soluções personalizadas e otimizadas, utilizando as tecnologias mais
-            requisitadas do mercado. Meu objetivo é proporcionar uma experiência
-            de uso superior que atenda às necessidades específicas de cada
-            cliente.
+          <p className="text-base text-slate-800 pt-2 pl-2">
+            &nbsp;Atuo como Desenvolvedor Frontend desde maio de 2023, com
+            experiência prática na criação de interfaces modernas, responsivas,
+            acessíveis e performáticas. Trabalho com tecnologias como HTML, CSS,
+            JavaScript, APIs REST, React, Redux, TypeScript, Next.js e Tailwind
+            CSS. Atualmente, estou aprofundando conhecimentos em testes
+            unitários e automatizados, TDD, CI/CD, princípios SOLID,
+            escalabilidade e manutenção de sistemas. Também venho estudando
+            Node.js e MongoDB para complementar meu repertório e expandir minha
+            visão sobre o desenvolvimento fullstack.
+            <br />
+            &nbsp;Gosto de aplicar conceitos de UX/UI, SEO, boas práticas de
+            desenvolvimento, Clean Code, Clean Architecture, Atomic Design e
+            padrões de projeto em todos os projetos que desenvolvo — sejam
+            autorais ou colaborativos. Sou proativo, focado em aprendizado
+            contínuo e motivado a contribuir com soluções eficientes, escaláveis
+            e com impacto real.
           </p>
           <ul className="flex justify-center gap-[30px] mt-[40px]">
             <div>
               <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
                 <Image src="/html.svg" alt="" width={60} height={60} />
               </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">HTML 5</h2>
+              <h2 className="text-center text-sm text-gray-400 mt-2 ">
+                HTML 5
+              </h2>
             </div>
             <div>
               <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
@@ -61,29 +66,37 @@ const Home = () => {
               <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
                 <Image src="/js.svg" alt="" width={60} height={60} />
               </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">JavaScript</h2>
+              <h2 className="text-center text-sm text-gray-400 mt-2 ">
+                JavaScript
+              </h2>
             </div>
             <div>
               <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
                 <Image src="/react.svg" alt="" width={60} height={60} />
               </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">React JS</h2>
+              <h2 className="text-center text-sm text-gray-400 mt-2 ">
+                React JS
+              </h2>
             </div>
             <div>
               <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
                 <Image src="/nextjs.svg" alt="" width={60} height={60} />
               </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">Next JS</h2>
+              <h2 className="text-center text-sm text-gray-400 mt-2 ">
+                Next JS
+              </h2>
             </div>
             <div>
               <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
                 <Image src="/twcss.svg" alt="" width={60} height={60} />
               </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">Tailwind CSS</h2>
+              <h2 className="text-center text-sm text-gray-400 mt-2 ">
+                Tailwind CSS
+              </h2>
             </div>
           </ul>
         </div>
-        <div className="ml-[120] ">
+        <div className="ml-[120]">
           <Image
             className="img-float"
             src="programming_light.svg"
@@ -92,8 +105,8 @@ const Home = () => {
             alt=""
           />
 
-          <ul className="flex justify-center gap-16 mb-6 mt-[22]">
-            <li className="bg-[#498EF3] w-[30] h-[30] rounded-full">
+          <ul className="flex justify-center gap-20 mt-[22]">
+            <li className="w-[30] h-[30] rounded-full">
               <Link href="/" target="blank">
                 <Image src="/inl.png" alt="" width={30} height={30} />
               </Link>
@@ -103,23 +116,23 @@ const Home = () => {
                 <Image src="/ghl.png" alt="" width={30} height={30} />
               </Link>
             </li>
-            <li className="bg-[#498EF3] w-[30] h-[30] rounded-full">
+            <li className="w-[30] h-[30] rounded-full">
               <Link href="" target="blank">
                 <Image src="/cvl.png" alt="" width={30} height={30} />
               </Link>
             </li>
           </ul>
-          <button
-            className={` ${ubunto.className} bg-[#498EF3] ml-12 w-[315] h-[80] rounded-[20] shadow-md text-white text-5xl `}
-          >
-            Fale Comigo!
-          </button>
+          <div className="flex justify-center">
+            <button
+              className={` ${ubunto.className} bg-[#498EF3] w-[315] h-[80] rounded-[20] mt-11 shadow-md text-white text-5xl hover:bg-white hover:text-[#498EF3] hover:scale-y-110`}
+            >
+              Fale Comigo!
+            </button>
+          </div>
         </div>
       </main>
-      <div
-        className="flex justify-center items-center gap-2 mt-20 text-[#0F0E14] text-opacity-70 text-base"
-      >
-        Acesse meus projetos
+      <div className="flex justify-center items-center gap-2 mt-20 text-[#0F0E14] text-opacity-65 text-base">
+        <Link href="/">Acesse meus projetos</Link>
         <Image
           className="opacity-70 rotate-90 arrow-float"
           src="/arrowdd.png"
