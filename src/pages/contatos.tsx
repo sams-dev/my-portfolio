@@ -1,6 +1,16 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { Ubuntu, Roboto } from "next/font/google";
+
+const ubunto = Ubuntu({
+  weight: "500",
+  subsets: ["latin"],
+});
+const roboto = Roboto({
+  weight: "500",
+  subsets: ["latin"],
+});
 
 const Contatos = () => {
   return (
@@ -9,14 +19,16 @@ const Contatos = () => {
         <title>Contatos | samsdev</title>
       </Head>
       <section className="mx-[175px] mt-[40px] pb-[80px] px-12 h-[800px] bg-white rounded-[15px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
-        <h1 className="text-black text-center font-medium text-5xl pt-12 pb-[75px]">
+        <h1
+          className={`${roboto.className} text-gray-800 text-center font-medium text-5xl pt-12 pb-[75px]`}
+        >
           CONTATOS
         </h1>
         <div className="grid grid-cols-2 justify-items-center">
           <form
-            className="flex flex-col px-12 py-9 gap-4 w-[478px] h-[390px] bg-[] text-white border-2 border-[#498EF3] rounded-xl"
+            className={`${ubunto.className} flex flex-col px-12 py-9 gap-4 w-[478px] h-[390px] bg-[] text-white border-2 border-[#498EF3] rounded-xl
             action="https://www.notion.so/samsdevtech/dev-3f3aa5c888d14622a698a909d66e6f5a"
-            method="POST"
+            method="POST"`}
           >
             <div className="flex gap-12 justify-center items-center">
               <div className="flex flex-col gap-2">
@@ -95,7 +107,9 @@ const Contatos = () => {
             </div>
           </form>
           <div className="h-[550]">
-            <h2 className="text-4xl text-center text-[#000000B2] mb-4">
+            <h2
+              className={` ${roboto.className} text-4xl text-center text-gray-600 mb-4`}
+            >
               Vamos criar um projeto juntos, contate-me
             </h2>
             <ul className="flex justify-center gap-12 mb-16">

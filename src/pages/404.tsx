@@ -1,6 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import { Ubuntu, Roboto } from "next/font/google";
+
+const ubunto = Ubuntu({
+  weight: "500",
+  subsets: ["latin"],
+});
+const roboto = Roboto({
+  weight: "500",
+  subsets: ["latin"],
+});
 
 const NotFound = () => {
   return (
@@ -10,7 +20,7 @@ const NotFound = () => {
       </Head>
       <div className="bg-[#252440] min-h-screen flex items-center justify-center">
         <section className="px-12 h-[800px] bg-white rounded-[15px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]">
-          <div className="flex justify-center pt-10 gap-4">
+          <div className={`${ubunto.className} text-gray-900 flex justify-center pt-10 gap-4`}>
             <h1 className="text-6xl pt-10">Page not found</h1>
             <span className="text-9xl">404</span>
           </div>
@@ -23,8 +33,8 @@ const NotFound = () => {
                 height={604}
               ></Image>
             </div>
-            <div className="flex flex-col justify-between items-center gap-6">
-              <p className="text-3xl pt-20 text-center font-semibold">
+            <div className={`${roboto.className} flex flex-col justify-between items-center gap-6`}>
+              <p className="text-3xl text-gray-800 pt-20 text-center font-semibold">
                 Oops, não conseguimos encontrar essa página!
               </p>
 
@@ -33,7 +43,7 @@ const NotFound = () => {
 
                 <Link
                   href="/"
-                  className="w-[315px] h-20 bg-[#498EF3] rounded-3xl text-white text-2xl font-bold flex items-center justify-center"
+                  className={`${ubunto.className} w-[315px] h-20 bg-[#498EF3] rounded-3xl text-white text-2xl font-bold flex items-center justify-center`}
                 >
                   Ir para à Página Inicial
                 </Link>
