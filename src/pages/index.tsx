@@ -20,16 +20,20 @@ const Home = () => {
       </Head>
       <main className="mx-[175] mt-[80] flex justify-center grid-cols-2">
         <div>
-          <b className={` ${roboto.className} text-4xl pl-2`}>
-            Oi 👋🏽 SOU O SAMUEL DOS SANTOS
+          <b className={` ${roboto.className} text-3xl pl-2 flex items-center`}>
+            Oi  SOU O SAMUEL DOS SANTOS
           </b>
-          <h1 className="text-9xl">
+          <h1 className="text-[80px]">
             <span className={` ${ubunto.className} text-[#498EF3] `}>
               FRONTEND
             </span>{" "}
-            <br /> <span className={` ${ubunto.className} `}>DEVELOPER</span>
+            <span className={` ${ubunto.className} `}>DEVELOPER</span>
           </h1>
-          <p className="text-base text-slate-800 pt-2 pl-2">
+          <b className="text-4xl text-gray-700">
+            Transformo ideias em interfaces modernas, acessíveis e de alto
+            desempenho.
+          </b>
+          <p className="pt-4 text-base text-slate-800 pl-2">
             &nbsp;Atuo como Desenvolvedor Frontend desde maio de 2023, com
             experiência prática na criação de interfaces modernas, responsivas,
             acessíveis e performáticas. Trabalho com tecnologias como HTML, CSS,
@@ -83,7 +87,7 @@ const Home = () => {
                 <Image src="/nextjs.svg" alt="" width={60} height={60} />
               </li>
               <h2 className="text-center text-sm text-gray-400 mt-2 ">
-                Next JS
+                Next Js
               </h2>
             </div>
             <div>
@@ -94,17 +98,48 @@ const Home = () => {
                 Tailwind CSS
               </h2>
             </div>
+            <div>
+              <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
+                <Image src="/node.svg" alt="" width={60} height={60} />
+              </li>
+              <h2 className="text-center text-sm text-gray-400 mt-2 ">
+                Node JS
+              </h2>
+            </div>
+            <div>
+              <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
+                <Image src="/mongo.svg" alt="" width={60} height={60} />
+              </li>
+              <h2 className="text-center text-sm text-gray-400 mt-2 ">
+                Mongo DB
+              </h2>
+            </div>
+            <div>
+              <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
+                <Image src="/mysql.svg" alt="" width={60} height={60} />
+              </li>
+              <h2 className="text-center text-sm text-gray-400 mt-2 ">
+                MySQL
+              </h2>
+            </div>
+            
           </ul>
         </div>
         <div className="ml-[120]">
           <Image
-            className="img-float"
+            className="img-float pt-20"
             src="programming_light.svg"
             width={1332}
             height={256}
             alt=""
           />
-
+          <div className="flex justify-center">
+            <button
+              className={` ${ubunto.className} bg-[#498EF3] w-[315] h-[80] rounded-[20] mt-10 shadow-md text-white text-5xl hover:bg-white hover:text-[#498EF3] hover:scale-y-110`}
+            >
+              Fale Comigo!
+            </button>
+          </div>
           <ul className="flex justify-center gap-20 mt-[22]">
             <li className="w-[30] h-[30] rounded-full">
               <Link href="/" target="blank">
@@ -122,13 +157,6 @@ const Home = () => {
               </Link>
             </li>
           </ul>
-          <div className="flex justify-center">
-            <button
-              className={` ${ubunto.className} bg-[#498EF3] w-[315] h-[80] rounded-[20] mt-11 shadow-md text-white text-5xl hover:bg-white hover:text-[#498EF3] hover:scale-y-110`}
-            >
-              Fale Comigo!
-            </button>
-          </div>
         </div>
       </main>
       <div className="flex justify-center items-center gap-2 mt-20 text-[#0F0E14] text-opacity-65 text-base">
