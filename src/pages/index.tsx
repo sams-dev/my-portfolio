@@ -21,7 +21,7 @@ const Home = () => {
       <main className="mx-[175] mt-[80] flex justify-center grid-cols-2">
         <div>
           <b className={` ${roboto.className} text-3xl pl-2 flex items-center`}>
-            Oi  SOU O SAMUEL DOS SANTOS
+            Oi <Image src="/maobg.gif" alt="icone mão acenando" width={80} height={60} unoptimized/> SOU O SAMUEL DOS SANTOS
           </b>
           <h1 className="text-[80px]">
             <span className={` ${ubunto.className} text-[#498EF3] `}>
