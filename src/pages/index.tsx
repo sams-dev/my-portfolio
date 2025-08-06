@@ -142,17 +142,17 @@ const Home = () => {
           </div>
           <ul className="flex justify-center gap-20 mt-[22]">
             <li className="w-[30] h-[30] rounded-full">
-              <Link href="/" target="blank">
+              <Link href="https://www.linkedin.com/in/samsdevtech/" target="blank" rel="noopener noreferrer">
                 <Image src="/inl.png" alt="" width={30} height={30} />
               </Link>
             </li>
             <li className="bg-[#ffffff] w-[30] h-[30] rounded-full">
-              <Link href="" target="blank">
+              <Link href="https://github.com/sams-dev" target="blank" rel="noopener noreferrer">
                 <Image src="/ghl.png" alt="" width={30} height={30} />
               </Link>
             </li>
             <li className="w-[30] h-[30] rounded-full">
-              <Link href="" target="blank">
+              <Link href="/scv.pdf" target="blank" rel="noopener noreferrer">
                 <Image src="/cvl.png" alt="" width={30} height={30} />
               </Link>
             </li>
