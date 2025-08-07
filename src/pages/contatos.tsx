@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { Roboto } from "next/font/google";
+import Form from "@/Components/Form";
 
 const roboto = Roboto({
   weight: "500",
@@ -21,12 +22,11 @@ const Contatos = () => {
           CONTATOS
         </h1>
         <div className="grid grid-cols-2 justify-items-center">
-          
           <div className="h-[550]">
             <h2
-              className={` ${roboto.className} text-4xl text-center text-gray-600 mb-4`}
+              className={` ${roboto.className} text-3xl text-center text-gray-600 mb-4`}
             >
-              Vamos criar um projeto juntos, contate-me
+              Vamos criar um projeto juntos, contate-me diretamente
             </h2>
             <ul className="flex justify-center gap-12 mb-16">
               <li className="w-12 h-12">
@@ -97,6 +97,12 @@ const Contatos = () => {
               </li>
             </ul>
             <Image src="/contact_light.svg" alt="" width={550} height={390} />
+          </div>
+          <div className="justify-items-center">
+            <h2 className={` ${roboto.className} text-3xl text-center text-gray-600 mb-8`}>
+              ou me mande uma proposta que eu entro em contato
+            </h2>
+          <Form/>
           </div>
         </div>
         <p className="flex justify-center gap-2 text-center text-[#0F0E14B2]">
