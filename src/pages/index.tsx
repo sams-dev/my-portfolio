@@ -64,6 +64,7 @@ const Home = () => {
           />
           <div className="flex justify-center">
             <button
+            onClick={() => window.location.href = '/contatos'}
               className={` ${ubunto.className} bg-[#498EF3] w-[315] h-[80] rounded-[20] mt-10 shadow-md text-white text-5xl hover:bg-white hover:text-[#498EF3] hover:scale-y-110`}
             >
               Fale Comigo!
