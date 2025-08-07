@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { Ubuntu, Roboto } from "next/font/google";
+import Techs from "@/Components/Techs";
 
 const ubunto = Ubuntu({
   weight: "700",
@@ -51,79 +52,7 @@ const Home = () => {
             contínuo e motivado a contribuir com soluções eficientes, escaláveis
             e com impacto real.
           </p>
-          <ul className="flex justify-center gap-[30px] mt-[40px]">
-            <div>
-              <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
-                <Image src="/html.svg" alt="" width={60} height={60} />
-              </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">
-                HTML 5
-              </h2>
-            </div>
-            <div>
-              <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
-                <Image src="/css.svg" alt="" width={60} height={60} />
-              </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">CSS 3</h2>
-            </div>
-            <div>
-              <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
-                <Image src="/js.svg" alt="" width={60} height={60} />
-              </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">
-                JavaScript
-              </h2>
-            </div>
-            <div>
-              <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
-                <Image src="/react.svg" alt="" width={60} height={60} />
-              </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">
-                React JS
-              </h2>
-            </div>
-            <div>
-              <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
-                <Image src="/nextjs.svg" alt="" width={60} height={60} />
-              </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">
-                Next Js
-              </h2>
-            </div>
-            <div>
-              <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
-                <Image src="/twcss.svg" alt="" width={60} height={60} />
-              </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">
-                Tailwind CSS
-              </h2>
-            </div>
-            <div>
-              <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
-                <Image src="/node.svg" alt="" width={60} height={60} />
-              </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">
-                Node JS
-              </h2>
-            </div>
-            <div>
-              <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
-                <Image src="/mongo.svg" alt="" width={60} height={60} />
-              </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">
-                Mongo DB
-              </h2>
-            </div>
-            <div>
-              <li className="flex items-center justify-center bg-white w-[80px] h-[80px] rounded-[25] shadow-md">
-                <Image src="/mysql.svg" alt="" width={60} height={60} />
-              </li>
-              <h2 className="text-center text-sm text-gray-400 mt-2 ">
-                MySQL
-              </h2>
-            </div>
-            
-          </ul>
+          <Techs/>
         </div>
         <div className="ml-[120]">
           <Image
